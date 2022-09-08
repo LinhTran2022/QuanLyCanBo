@@ -20,7 +20,8 @@ int main() {
 			break;
 		case 3:
 			cout << "Tinh luong cho nhan vien ten : ";
-			cin >> Ten;
+			cin.ignore();
+			getline(cin, Ten);
 			ql.tinhLuong(Ten);
 			break;
 		case 4:
